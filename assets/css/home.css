@@ -1,0 +1,363 @@
+/* File: login_page.html
+    Author: Hsu, Sophie
+    Date: September 6, 2023
+    Copyright: 2023 
+*/
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.banner img {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  background-size: cover;
+}
+
+.center {
+  position: absolute;
+  top: 10%;
+  padding-left: 5%;
+  font-family: "Oswald";
+  font-size: 5.9vw;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 5rem;
+}
+
+/*--------------------------------------------------------------
+news Section
+--------------------------------------------------------------*/
+
+.news {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 20px;
+  background-color: rgba(32, 178, 171, 0.2);
+  background-size: 100%;
+  text-decoration: none;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.news a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.news:hover {
+  text-decoration: underline;
+  background-color: rgb(193, 238, 223);
+}
+
+/*--------------------------------------------------------------
+# About us Section
+--------------------------------------------------------------*/
+
+#about {
+  padding-bottom: 80px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.about .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.about .content ul {
+  list-style: none;
+}
+
+.about .content ul li {
+  padding-left: 28px;
+  position: relative;
+}
+
+.about .content ul li + li {
+  margin-top: 10px;
+}
+
+.about .content ul i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 20px;
+  color: #47b2e4;
+  line-height: 1;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+.about .content .btn-learn-more {
+  font-family: "montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 4px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #47b2e4;
+  animation-delay: 0.8s;
+  margin-top: 6px;
+  border: 2px solid #47b2e4;
+}
+
+.about .content .btn-learn-more:hover {
+  background: #47b2e4;
+  color: #fff;
+  text-decoration: none;
+}
+
+.content h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-weight: 800;
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
+.main-body {
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: "montserrat";
+  font-weight: 300;
+  font-size: large;
+  background-color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  padding-top: 5%;
+  font-size: 40px;
+  font-family: "oswald";
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
+}
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+#testimo {
+  background-color: #244c915c;
+  padding-bottom: 80px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.testimonial .icon-box {
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  padding: 50px 30px;
+  transition: all ease-in-out 0.4s;
+  background: #fff;
+  border: #74787c48 solid;
+}
+
+.testimonial .icon-box .icon {
+  margin-bottom: 10px;
+}
+
+.testimonial .icon-box .icon i {
+  color: #47b2e4;
+  font-size: 36px;
+  transition: 0.3s;
+}
+
+.testimonial .icon-box h4 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.testimonial.icon-box p {
+  line-height: 24px;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.testimonial .icon-box:hover {
+  transform: translateY(-10px);
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  color: #111;
+  font-size: 14px;
+  background: #fff;
+}
+
+#footer .footer-top {
+  padding: 60px 0 30px 0;
+  background: #f9faf9;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h4 {
+  font-size: 22px;
+  margin: 0 0 30px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+}
+
+#footer .footer-top .footer-contact p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #777777;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444444;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #111;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #777777;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  text-decoration: none;
+  color: #747171;
+}
+
+#footer .footer-newsletter {
+  font-size: 15px;
+}
+
+#footer .footer-newsletter h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444444;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 50px;
+  text-align: left;
+  border: 1px solid #e0e5e2;
+}
+
+#footer .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px 2px 20px;
+  background: #111;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 50px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-newsletter form input[type="submit"]:hover {
+  background: #747171;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  font-size: 13px;
+  color: #111;
+}
+
+#footer .credits a {
+  color: #111;
+  transition: 0.3s;
+}
+
+#footer .credits a:hover {
+  color: #111;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #747171;
+  color: #111;
+  text-decoration: none;
+}

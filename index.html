@@ -1,0 +1,423 @@
+<!-- File: index.html
+    Author: Sophie Hsu
+    Date: September 6, 2023
+    Description: Homepage
+    Team 5
+    Copyright: 2023 
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <!-- Head -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title-->
+    <title>CodeWise | Homepage</title>
+    <link href="assets/img/product_page/favicon.png" rel="icon" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <!--------Google Fonts------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Mulish:wght@300&family=Oswald:wght@300;700&family=Sora&display=swap" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
+    <!-- External CSS -->
+    <link href="assets/css/home.css" rel="stylesheet" />
+    <link href="assets/css/login_style_navbar.css" rel="stylesheet" />
+  </head>
+
+  <!-- Body -->
+  <body>
+
+    <!-- File: Nav & login_page.html
+      Author: Lisi Cao
+      Date: September 3, 2023
+      Description: click button "login", turn to page login.
+      Contact: lisi.cao@johnabbottcollege.net
+      Copyright: 2023 
+  -->
+      <!-- ======= Header ======= -->
+    <header>
+    <!-- ... Navigation Bar ... -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-black">
+      <div class="container-fluid d-flex justify-content-between">
+        <!-- Left-aligned items -->
+        <div
+          class="d-flex align-items-center me-auto nav-left-container gap-xxl-5 gap-xl-4 gap-lg-3"
+        >
+          <!-- Hamburger Menu-->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Home Page-->
+          <a class="navbar-brand ms-3 bg-black fw-bold" href="#">
+            <img src="assets/img/product_page/01.logo.png" alt="Website Logo" />
+          </a>
+
+          <!-- Page: Explore classes-->
+          <div class="d-flex d-none d-md-flex ms-3 bg-black fw-bold">
+            <a class="nav-link navbar-text" href="product.html">Browse</a>
+          </div>
+
+          <!-- Search Bar: classes -->
+          <form class="d-flex d-none d-md-flex ms-3 search-form" role="search">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="What do you want to learn?"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success search-btn disabled" type="submit">
+              🔍
+            </button>
+          </form>
+        </div>
+        <!-- end of right container -->
+
+        <!-- Right-aligned items -->
+        <div class="d-flex align-items-center">
+          <!-- Searching bar & Class Catogary-->
+          <div class="d-flex d-md-none ms-3">
+            <a class="nav-link disabled" href="#">🔍</a>
+          </div>
+
+          <!-- Checkout Page-->
+          <div class="d-flex ms-3">
+            <a class="nav-link" href="checkout.html"
+              ><i class="bi bi-cart"></i
+            ></a>
+          </div>
+
+          <!-- Login Page-->
+          <div class="d-flex d-none d-md-flex ms-3">
+            <button
+              type="button"
+              class="btn btn-primary navbar-text bg-black border-0 fw-bold"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+        <!-- end of right-aligned items -->
+      </div>
+      <!-- end of nav container -->
+    </nav>
+
+    <!-- ... Offcanvas Menu ... -->
+    <div
+      class="offcanvas offcanvas-start text-bg-dark custom-mt bg-black"
+      tabindex="-1"
+      id="offcanvasExample"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">CODEWISE</h5>
+        <button
+          type="button"
+          class="btn-close text-reset text-bg-light"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- Offcanvas content: link, button, menu -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="nav-link login-btn"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+              >Login</a
+            >
+          </li>
+          <li class="nav-item"><a class="nav-link disabled" href="#">Signup</a></li>
+          <li><hr /></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Browse</a></li>
+          <li class="nav-item"><a class="nav-link disabled" href="#">Support</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Login Modal with Bootstrap -->
+    <div
+      class="modal"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <!-- Container for Login Modal -->
+      <div class="modal-dialog">
+        <!-- Modal Content: Contains Header, Body, and Footer -->
+        <div class="modal-content d-flex">
+          <!-- Close Button for the Modal (Top-Right Corner) -->
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+
+          <!-- Modal Header: Contains Modal Title and Additional Text/Links -->
+          <div class="modal-header">
+            <h3 class="modal-title font-weight-bold" id="loginModalLabel">
+              Login
+            </h3>
+            <span>New here? <a href="#">Create Account</a></span>
+          </div>
+
+          <!-- Modal Body: Contains Login Form -->
+          <div class="modal-body">
+            <!-- Login Form -->
+            <form class="d-flex flex-column justify-content-between">
+              <!-- Email Input Field and Label -->
+              <div class="mb-3 input-container">
+                <input type="email" class="form-control" id="email" required />
+                <label for="email" class="form-label">Email</label>
+              </div>
+
+              <!-- Password Input Field and Label -->
+              <div class="mb-3 input-container">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  required
+                />
+                <label for="password" class="form-label">Password</label>
+              </div>
+
+              <!-- Login Button -->
+              <button
+                type="submit"
+                class="btn btn-primary bg-black text-light align-self-center w-auto"
+              >
+                Login
+              </button>
+            </form>
+
+            <!-- Forgot Password Link -->
+            <a href="#" class="mt-3 d-block text-center forgot-password"
+              >Forgot Password?</a
+            >
+          </div>
+        </div>
+        <!-- End of Modal Content -->
+      </div>
+      <!-- End of Modal Dialog -->
+    </div>
+    <!-- End of Login Modal -->
+  </header>
+    <!-- End Header -->
+
+    <!--------------------------------------------------------------------------------------------->
+    <!-- Section Banner -->
+    <section class="banner">
+      <img src="./assets/img/home_page/banner.jpg" alt="laptop" />
+      <h1 class="center">
+        Start coding <br />
+        start learning <br />
+        start CodeWise!
+      </h1>
+    </section>
+    <!--------------------------------------------------------------------------------------------->
+
+    <section class="news">
+      <a href="product.html"
+        ><em>Back to School Sales: Get 10% off on all courses until September
+        30th!</em></a
+      >
+    </section>
+    <!--------------------------------------------------------------------------------------------->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div data-aos="fade-up">
+        <div class="section-title">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              Begin Your Journey Today! Join CodeWise for an enriching coding
+              odyssey. Open doors to innovation, creativity, and countless
+              opportunities. Unleash your coding potential with us!
+            </p>
+            <ul>
+              <li>
+                <i class="ri-check-double-line"></i> 🚀 Empower Your Journey:
+                From comprehensive beginner courses to advanced projects, our
+                tools propel your coding journey.
+              </li>
+              <li>
+                <i class="ri-check-double-line"></i> 🎓 Expert Instructors: Gain
+                insights from industry pros. Learn practical skills from those
+                who've walked the path.
+              </li>
+              <li>
+                <i class="ri-check-double-line"></i> 🛒 Easy Access: Learn
+                anywhere, anytime, on any device.
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              Unleash Your Coding Potential! At CodeWise, we're your ultimate
+              destination for programming mastery. Whether you're a beginner or
+              a seasoned developer, our platform caters to every level of
+              expertise.
+            </p>
+            <a href="./index_single_product.html" class="btn-learn-more"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Us Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimo" class="testimonial section-bg">
+      <div data-aos="fade-up">
+        <div class="section-title">
+          <h2>Testimonials</h2>
+        </div>
+
+        <div class="row">
+          <div
+            class="col-xl-3 col-md-6 d-flex align-items-stretch"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4>Maxime White</h4>
+              <p>
+                "Thanks to this online course, I've mastered HTML for
+                structuring web content, CSS for styling, and Bootstrap for
+                responsive design. Highly recommended!"
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4>Sharon Wang</h4>
+              <p>
+                "This course made learning a breeze. I can now create beautiful,
+                responsive websites effortlessly!"
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4>Connor Bornn</h4>
+              <p>
+                "Perfect for busy professionals!! I learned HTML and CSS with
+                CodeWise at my own pace. Now I'm a web design pro, all thanks to
+                this course!"
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4>Adam Avery</h4>
+              <p>
+                "CodeWise is an excellent starting point for web development and
+                design!"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>CODE WISE</h3>
+              <p>
+                1234 Adam Street <br />
+                Montreal, QC<br />
+                Canada <br /><br />
+                <strong>Phone:</strong> +1 5589 55488 55<br />
+                <strong>Email:</strong> info@CODEWISE.com<br />
+              </p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Join Our Newsletter</h4>
+              <p>
+                Tamen quem nulla quae legam multos aute sint culpa legam noster
+                magna
+              </p>
+              <form action="process.php" method="post">
+                <input type="email" name="email" /><input
+                  type="submit"
+                  value="Subscribe"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-md-flex py-4">
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            &copy; 2023 Copyright <strong><span>Code Wise</span></strong
+            >. All Rights Reserved
+          </div>
+          <div class="credits">Designed by <a href="#">TEAM 5</a></div>
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,224 @@
+/* File: login_page.html
+    Author: Lisi Cao
+    Date: August 31, 2023
+    Description: click button "login", turn to page login.
+    Contact: lisi.cao@johnabbottcollege.net
+    Copyright: 2023 
+*/
+
+:root {
+    --nav-bg-color: 111;
+    --text-light-color: lightgrey;
+    --gap-value: 30px;
+}
+
+/* Global styles */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* Link styles for dark navbar */
+  .navbar-dark .nav-link {
+    color: lightgrey;
+    font-weight: 700;
+  }
+  
+  .navbar-dark .nav-link:hover,
+  .navbar-dark .nav-link:focus {
+    color: grey;
+  }
+
+  .navbar-brand img{
+    height: 30px;
+    width: auto;
+  }
+
+  
+  
+  /* Input styles for the left navigation container */
+  .nav-left-container form input {
+    color: lightgrey;
+    background-color: #151515;
+    border-radius: 25px;
+    font-size: smaller;
+    width: 400px;
+    height: 40px;
+    text-indent: 50px;
+    border: 0.5px solid #151515;
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .nav-left-container form input::placeholder {
+    color: grey;
+  }
+  
+  .nav-left-container form input:focus {
+    background-color: #151515;
+  }
+  
+  /* Search form position styles */
+  .nav-left-container .search-form {
+    position: relative;
+  }
+  .nav-left-container .search-btn {
+    position: absolute;
+    right: 350px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: lightgrey;
+    font-weight: 900;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  /* Custom styles for the navbar toggler button */
+  .navbar-toggler {
+    box-shadow: none;
+    border: none;
+    outline: none;
+  }
+  
+  .navbar-toggler:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+    outline: none;
+    box-shadow: none;
+  }
+  
+  /* Offcanvas custom width */
+  .offcanvas {
+    width: 70% !important;
+  }
+  
+  /* Custom margin-top utility */
+  .custom-mt {
+    margin-top: 54.24px;
+  }
+  
+  /* -------------------------
+       RESPONSIVE STYLES
+    ------------------------- */
+  
+  /* Styles for small screens: center the logo */
+  @media (max-width: 767.98px) {
+    .navbar-brand {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* -------------------------
+       LOGIN MODAL STYLES
+    ------------------------- */
+  
+  /* Modal container full-screen */
+  .modal-dialog {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Modal content styles */
+  .modal-content {
+    background-color: #fbfbfb;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 400px;
+    padding: 2rem;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Styles for the first child in the modal (usually a close button or icon) */
+  .modal-content > :first-child {
+    align-self: flex-end;
+    cursor: pointer;
+    height: 10px;
+  }
+  
+  /* Modal header styles */
+  .modal-header {
+    border: none;
+  }
+  
+  .modal-header span {
+    font-size: smaller;
+    color: lightslategrey;
+  }
+  
+  .modal-header span a {
+    text-decoration: underline;
+    font-weight: 700;
+    color: rgb(128, 128, 128);
+    cursor: pointer;
+  }
+  
+  /* Input container positioning */
+  .input-container {
+    position: relative;
+  }
+  
+  /* Floating label styles */
+  .modal-content .form-label {
+    position: absolute;
+    background-color: white;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: grey;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+  
+  .input-container input::placeholder {
+    color: grey;
+  }
+  
+  /* Styles when input is focused */
+  .input-container.focused .form-label {
+    top: 0;
+    left: 20px;
+    font-size: 10px;
+    color: darkgrey;
+  }
+  
+  .input-container.focused input::placeholder {
+    color: transparent;
+  }
+  
+  /* Form control custom styles */
+  .modal-content .form-control {
+    height: 60px;
+    width: 100%;
+    border: 0.5px solid lightgrey;
+    border-radius: 5px;
+    text-indent: 20px;
+    outline: none;
+    box-shadow: none;
+  }
+  
+  /* Transition for the button in modal body */
+  .modal-body form .btn {
+    transition: background-color 0.3s ease-out;
+  }
+  
+  .modal-body form .btn:hover {
+    background-color: whitesmoke;
+  }
+  
+  /* Styles for the forgot password link */
+  .forgot-password {
+    font-size: 12px;
+    color: rgb(128, 128, 128);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  

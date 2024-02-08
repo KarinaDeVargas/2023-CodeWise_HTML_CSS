@@ -1,0 +1,46 @@
+# Compiled class files
+*.class
+
+# Build directories (Maven, Gradle, etc.)
+target/
+build/
+out/
+
+# Package files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# IDE-specific files (e.g., IntelliJ, Eclipse)
+.idea/
+*.iml
+*.iws
+*.prefs
+*.classpath
+*.project
+.settings/
+
+# System files
+.DS_Store
+<<<<<<< HEAD
+**/.DS_Store
+=======
+>>>>>>> f62d0a8 (final web)
+Thumbs.db
+
+# Temporary files
+*~
+*.swp
+*.bak
+
+# Other common tools
+bin/
+.gradle/
