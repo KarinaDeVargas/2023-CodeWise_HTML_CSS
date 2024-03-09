@@ -1,4 +1,4 @@
-[Code Wise]https://lisicao.github.io/Web_CodeWise/
+website: https://lisicao.github.io/Web_CodeWise/
 
 # Web_CodeWise
 
