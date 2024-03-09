@@ -31,6 +31,28 @@ We welcome contributions from anyone interested in improving the website's conte
 
 This project is licensed under the [MIT License](LICENSE). See the LICENSE file for more details.
 
-## ScreenShoots
+## ScreenShoots - Login
 
-<img src="https://github.com/KarinaDeVargas/2023-FSD10-CodeWise_HTML_CSS/blob/main/assets/CourseDetail_01.png" alt="Screenshot 1" width="250"/>
+<img src="https://github.com/KarinaDeVargas/2023-FSD10-CodeWise_HTML_CSS/blob/main/assets/Login.png" alt="Screenshot 1" width="400"/>
+
+## ScreenShoots - Home Page
+
+<img src="https://github.com/KarinaDeVargas/2023-FSD10-CodeWise_HTML_CSS/blob/main/assets/HomePage_Desktop01.png" alt="Screenshot 1" width="400"/>
+<img src="https://github.com/KarinaDeVargas/2023-FSD10-CodeWise_HTML_CSS/blob/main/assets/HomePage_Desktop02.png" alt="Screenshot 1" width="400"/>
+
+## ScreenShoots - Home Page Mobile
+
+<img src="https://github.com/KarinaDeVargas/2023-FSD10-CodeWise_HTML_CSS/blob/main/assets/HomePage_Mobile01.png" alt="Screenshot 1" width="400"/>
+<img src="https://github.com/KarinaDeVargas/2023-FSD10-CodeWise_HTML_CSS/blob/main/assets/HomePage_Mobile02.png" alt="Screenshot 1" width="400"/>
+
+## ScreenShoots - Course Detail
+
+<img src="https://github.com/KarinaDeVargas/2023-FSD10-CodeWise_HTML_CSS/blob/main/assets/CourseDetail_01.png" alt="Screenshot 1" width="400"/>
+<img src="https://github.com/KarinaDeVargas/2023-FSD10-CodeWise_HTML_CSS/blob/main/assets/CourseDetail_02.png" alt="Screenshot 1" width="400"/>
+<img src="https://github.com/KarinaDeVargas/2023-FSD10-CodeWise_HTML_CSS/blob/main/assets/CourseDetail_03.png" alt="Screenshot 1" width="400"/>
+<img src="https://github.com/KarinaDeVargas/2023-FSD10-CodeWise_HTML_CSS/blob/main/assets/CourseDetail_04.png" alt="Screenshot 1" width="400"/>
+
+## ScreenShoots - Payment
+
+<img src="https://github.com/KarinaDeVargas/2023-FSD10-CodeWise_HTML_CSS/blob/main/assets/PaymentPAge_01.png" alt="Screenshot 1" width="400"/>
+<img src="https://github.com/KarinaDeVargas/2023-FSD10-CodeWise_HTML_CSS/blob/main/assets/PaymentPage_02.png" alt="Screenshot 1" width="400"/>
