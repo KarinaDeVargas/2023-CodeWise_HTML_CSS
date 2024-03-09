@@ -33,4 +33,4 @@ This project is licensed under the [MIT License](LICENSE). See the LICENSE file 
 
 ## ScreenShoots
 
-<img src="https://github.com/porpup/Quiz_App/assets/3512401/14fe9196-0aaf-42fa-8c23-3a1e12b57d6f" alt="Screenshot 1" width="150"/>
+<img src="https://github.com/KarinaDeVargas/2023-FSD10-CodeWise_HTML_CSS/blob/main/assets/CourseDetail_01.png" alt="Screenshot 1" width="150"/>
